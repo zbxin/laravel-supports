@@ -1,0 +1,24 @@
+{
+  "name": "zhieq/laravel-supports",
+  "description": "zhieq group supports",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "zhieq",
+      "email": "developer@zhieq.com"
+    }
+  ],
+  "require": {
+    "laravel/framework": "5.*",
+    "zhieq/laravel-contracts": "^1.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "ZhiEq\\": "src"
+    },
+    "files": [
+      "functions/helpers.php"
+    ]
+  }
+}
