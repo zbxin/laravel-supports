@@ -15,7 +15,7 @@
   },
   "autoload": {
     "psr-4": {
-      "ZhiEq\\": "src"
+      "ZhiEq\\Supports\\": "src"
     },
     "files": [
       "functions/helpers.php"

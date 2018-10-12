@@ -311,10 +311,10 @@ if (!function_exists('app_id')) {
 
     function app_id()
     {
-        if (config('app.id') === null) {
-            config('app.id', uuid());
+        if (\ZhiEq\Supports\App::$id === null) {
+            \ZhiEq\Supports\App::$id = uuid();
         }
-        return config('app.id');
+        return \ZhiEq\Supports\App::$id;
     }
 }
 
