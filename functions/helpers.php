@@ -372,3 +372,18 @@ if (!function_exists('code_version')) {
     }
 }
 
+
+if (!function_exists('definition_to_select')) {
+
+    /**
+     * @param array $definition
+     * @return string
+     */
+
+    function definition_to_select(array $definition)
+    {
+        return collect($definition)->map(function ($value, $key) {
+            return ['code' => $key, 'name' => $value];
+        })->values();
+    }
+}
