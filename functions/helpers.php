@@ -377,7 +377,7 @@ if (!function_exists('definition_to_select')) {
 
     /**
      * @param array $definition
-     * @return string
+     * @return array
      */
 
     function definition_to_select(array $definition)
