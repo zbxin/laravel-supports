@@ -384,6 +384,6 @@ if (!function_exists('definition_to_select')) {
     {
         return collect($definition)->map(function ($value, $key) {
             return ['code' => $key, 'name' => $value];
-        })->values();
+        })->values()->toArray();
     }
 }
