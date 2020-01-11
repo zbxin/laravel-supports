@@ -11,7 +11,8 @@
   ],
   "require": {
     "laravel/framework": "*",
-    "zhieq/laravel-contracts": "^1.0"
+    "zhieq/laravel-contracts": "^1.0",
+    "ext-json": "*"
   },
   "autoload": {
     "psr-4": {
