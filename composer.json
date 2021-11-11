@@ -1,22 +1,22 @@
 {
-  "name": "zhieq/laravel-supports",
-  "description": "zhieq group supports",
+  "name": "zbxin/laravel-supports",
+  "description": "supports",
   "type": "library",
   "license": "MIT",
   "authors": [
     {
-      "name": "zhieq",
-      "email": "developer@zhieq.com"
+      "name": "zbxin",
+      "email": "developer@zbxin.com"
     }
   ],
   "require": {
     "laravel/framework": "*",
-    "zhieq/laravel-contracts": "^1.0",
+    "zbxin/laravel-contracts": "^1.0",
     "ext-json": "*"
   },
   "autoload": {
     "psr-4": {
-      "ZhiEq\\Supports\\": "src"
+      "zbxin\\Supports\\": "src"
     },
     "files": [
       "functions/helpers.php"
