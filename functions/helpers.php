@@ -20,7 +20,7 @@ if (!function_exists('errors')) {
     $returnInfo = [
       'request' => app_id(),
     ];
-    if ($message instanceof \Zhieq\Contracts\Exception) {
+    if ($message instanceof \Zbxin\Contracts\Exception) {
       $returnInfo['code'] = $message->getCode();
       $returnInfo['message'] = $message->getMessage();
       $returnInfo['data'] = filter_null($message->getData());
@@ -355,10 +355,10 @@ if (!function_exists('app_id')) {
 
   function app_id()
   {
-    if (\ZhiEq\Supports\App::$id === null) {
-      \ZhiEq\Supports\App::$id = uuid();
+    if (\Zbxin\Supports\App::$id === null) {
+      \Zbxin\Supports\App::$id = uuid();
     }
-    return \ZhiEq\Supports\App::$id;
+    return \Zbxin\Supports\App::$id;
   }
 }
 

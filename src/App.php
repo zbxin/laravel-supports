@@ -1,6 +1,6 @@
 <?php
 
-namespace ZhiEq\Supports;
+namespace Zbxin\Supports;
 
 class App
 {
