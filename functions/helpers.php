@@ -14,7 +14,7 @@ if (!function_exists('errors')) {
    * @return \Illuminate\Http\JsonResponse
    */
 
-  function errors($message, $code = 1, $data = [], $status = 500, $headers = [], $encodingOptions = JSON_UNESCAPED_UNICODE)
+  function errors($message, $code = 1, $data = [], $status = 200, $headers = [], $encodingOptions = JSON_UNESCAPED_UNICODE)
   {
     logs()->info('request return error at:' . microtime(true));
     $returnInfo = [
@@ -31,7 +31,6 @@ if (!function_exists('errors')) {
       $status = $message->getStatusCode();
       $headers = $message->getHeaders();
     } else {
-      $code = $code === 1 ? 99999 : $code;
       $returnInfo['code'] = $code;
       $returnInfo['message'] = $message;
       !empty($data) && $returnInfo['data'] = filter_null($data);
