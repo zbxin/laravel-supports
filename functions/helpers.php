@@ -58,7 +58,7 @@ if (!function_exists('success')) {
       'request' => app_id(),
       'code' => 0,
       'message' => $message === null ? trans('request_handle_successful') : $message,
-      'data' => is_string($data) ? $data : (is_array($data) ? $data : collect($data)->toArray()),
+        'data' => is_string($data) ? $data : ($data === null ? $data : (is_array($data) ? $data : collect($data)->toArray())),
     ];
     logs()->info('request return success data', $returnData);
     return response()->json($returnData, 200, $headers, $encodingOptions);
